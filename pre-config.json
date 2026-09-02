@@ -20,6 +20,12 @@
 		"OAuthIntegratorWebclient": {
 			"AllowNewUsersRegister": false
 		},
+		"RecaptchaWebclientPlugin": {
+			"Disabled": true
+		},
+		"CloudflareTurnstileWebclientPlugin": {
+			"Disabled": true
+		},
 		"FilesWebclient": {
 			"ShowCommonSettings": true,
 			"ShowFilesApps": false,
@@ -60,6 +66,12 @@
 			"ShowMailAndroidApp": false,
 			"ShowMailIosApp": false,
 			"ShowFilesServerUrlApp": false
+		},
+		"SecuritySettingsWebclient": {
+			"Disabled": true
+		},
+		"IPAllowList": {
+			"Disabled": true
 		},
 		"TwoFactorAuth": {
 			"Disabled": true,

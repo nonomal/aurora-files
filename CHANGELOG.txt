@@ -1,3 +1,187 @@
+[9.8.6]
+[+] Fully new mobile web version
+[*] Fixed SQL, XML and CSV injection vulnerabilities
+[*] Fixed user not being logged out from other sessions after changing account password
+[*] Restored AllowUsedDevices functionality
+[*] Fixed missing linebreaks in forwarded message headers
+[*] Fixed losing contact's friendly name when reopening a message draft
+[*] Improved performance of Mail folder loading
+[*] Fixed folder creation with a long name in Files
+[*] Fixed system user group returning an empty Email list
+[*] Fixed UpdateGroup not updating group contacts correctly
+[*] Fixed public calendar shown as empty
+[*] Fixed visual issues in the list of own PGP keys
+[*] Various fixes and improvements
+
+[9.8.5]
+[+] Improved display of Outlook-formatted emails
+[+] Added support for elliptic curve cryptography (ECC) PGP keys
+[*] Fixed displaying PGP keys on user settings screen
+[*] Fixed XSS vulnerabilities
+[*] Fixed horizontal split mismatch from 9.8.4
+[*] Fixed external mail host not set in iOS profile
+[*] Misc. security improvements
+[*] Minor fixes and improvements in Files module
+[*] Minor UI improvements in Calendar module
+
+[9.8.4]
+[*] Closed Secure Link vulnerability
+[*] iOS profile now uses external IMAP settings correctly
+[*] Fixed issue with importing dcntacts from VCF files
+[*] Security improvements
+
+[9.8.3]
+[*] Fixed opening attachement is attached .eml files
+[*] Fixed problem with reccurent events in external iCal feed
+[*] Fixed problem with global address book on iOS
+[*] Fixed displaying Tasks with no time
+[*] Fixed file drag'n'drop between different storages
+
+[9.8.2]
+[+] It is now possible to skip 2FA when logging onto DAV ("Skip2FA" setting in Dav module)
+[+] IgnoreImapSubscription setting now applies to Aurora Mail mobile app as well
+[*] Fixed issues with Google/Gmail integration
+[*] Fixed issues with integration via Single Sign-On 
+[*] Fixed issue with viewing PDF files
+[*] Fixed issue with "Test Connection" tool of RocketChat integration
+[*] Fixed issue with images in signature HTML source
+[*] Fixed issue with contact groups no longer shown in address autocompletion
+[*] Fixed issue with importing to custom address book
+[*] Fixed issue with post_max_size and upload_max_filesize values not handled correctly on file uploads
+[*] Corrected issues with displaying event time in event info pane
+[*] Corrected toolbar issues in Sand theme
+[*] Closed XSS issue with OAuth URLs
+[*] Italian translation update
+[*] A large number of fixes, optimizations and improvements
+
+[9.8.1]
+[+] Added a blockquote feature in message editor
+[*] Improved security of the authentication token cookie
+[*] Fixed automatic account creation in RocketChat module
+[*] Fixed issue with Collected addresses displayed in All contacts
+[*] Fixed removing contacts from suggestion dropdown
+[*] Fixed issue with updating signature
+[*] Fixed multiple issues with the use of code deprecated in PHP 8.2 and 8.3
+[*] Fixed issue with default calendar used by ActiveServer
+[*] Corrected issues with deleting the only tenant
+[*] Miscellaneous bugfixes and improvements
+
+[9.8.0]
+[+] Allow for updating passwords for linked email accounts
+[*] Security-related improvements for password encryption
+[*] Corrected an issue with removing collected contacts from a dropdown list
+[*] Corrected an issue that allowed unauthorized users to create email notes
+[*] Improved blocking user after multiple failed login attempts
+[*] Added logging of IPAllowList access errors
+[*] Improved XSS protection in mail viewer
+[*] Various fixes and improvements
+
+[9.7.8]
+[+] QR code for 2FA is now generated independently from external vendors
+[+] Added an option for disabling user in adminpanel
+[+] Added Note field for user in adminpanel
+[+] Auth tokens are now invalidated when updating account password on login
+[*] Fixed issue with saving sent mail for scheduled messages
+[*] Fixed issue with logging user into Rocket.Chat
+[*] Fixed issue with closing a task
+[*] Various fixes and improvements
+
+[9.7.7]
+[+] Public links in Files now handle folder renaming
+[+] IP-allowlist added to all products
+[+] Modules that change mail passwords now support ResetPassword feature
+[+] Attendee friendly names are now shown in ICS preview panel
+[+] Support for moving contacts to user-created address books
+[*] Fixed Sent folder usage within the Scheduled Messages feature
+[*] Updated German translation
+[*] Updated Russian translation
+[*] Fixed systemd-related issue in Debian package
+[*] Improved sorting of contacts
+[*] Implemented security fixes
+
+[9.7.6]
+[+] New refactored contact storage model
+[+] Error logs are now available in adminpanel
+[+] Time format settings are now correctly applied throughout the interface
+[*] Fixed issue with DAV links displayed in account settings
+[*] Improved FailedLoginBlock limitations
+[*] Fixed issues with S3 file storage
+[*] Miscellaneous bugfixes and improvements
+
+[9.7.5]
+[*] Files visual layout overhaul
+[*] SQL query sanitization reworked
+[*] Various fixes and improvements
+
+[9.7.4]
+[+] Grouped security-related modules in user settings
+[*] Various fixes and improvements
+
+[9.7.3]
+[+] Autoresponder now supports enabling/disabling it by schedule
+[+] External system password encryption in password change and signup modules
+[*] Fixed various issues with recurring tasks and events
+[*] Fixed issue with displaying multiline text in event ICS preview
+[*] Fixed issue with importing ICS containing international characters
+[*] Fixed issues with deprecated code in Nextcloud integration app
+[*] Docker images updated to correct issues with DAV access
+[*] Outlook Sync documentation revised (Aurora only)
+[*] Various fixes and improvements
+
+[9.7.2]
+[+] Added password reset support for password change via POPPASSD
+[+] Added multi-line support for Location field in Calendar
+[+] Added support for path-style requests in S3 file storage modules
+[*] Fixed issue with renaming folders when IgnoreImapSubscription was enabled
+[*] Corrected issue with cPanel integration
+[*] Various bugfixes and improvements
+
+[9.7.1]
+[+] Event appointments can now be added via CalDAV (WebMail Pro / Aurora Corporate)
+[+] In Files, selection is now cleared when clicking empty area
+[+] Removing logs older than N days is now configurable, RemoveOldLogsDays in config.json file
+[+] Added PHP-FPM in Debian/Ubuntu packages in addition to PHP as Apache module
+[+] Fastpanel integration
+[*] Updated various JavaScript libraries used as dependencies, known vulnerabilities removed
+[*] Code refactoring, PhpStan level 2 compliance maintained
+[*] Device management in 2FA module rewritten
+[*] Fixed various data encryption issues
+[*] Corrected issues with accepting invitations from Google Calendar (WebMail Pro / Aurora Corporate)
+[*] Fixed issues with displaying larger messages in Notes
+[*] Corrected issues with calendar sharing (Aurora Corporate)
+[*] Redesigned reminders functionality in shared calendars (Aurora Corporate)
+[*] Corrected issue with navigating in Month view of calendar (WebMail Pro / Aurora Corporate)
+[*] Fixed issues with recurring tasks length (WebMail Pro / Aurora Corporate)
+[*] Fixed DAV browser plugin incompatibility with PHP 8.2
+[*] Improved pasting from MS Excel, with borders retained
+[*] Corrected an issue with DAV update in cPanel installer (WebMail only)
+[*] Corrected various issues with exporting contacts
+[*] Grouping contacts improved, contacts from custom address books can now be included
+[*] Files status bar redesigned
+[*] Quasar 2 and VueJS 3 are now used in admin panel
+[*] German translation overhaul
+[*] Various fixes and improvements
+
+[9.7.0]
+[+] Password reset feature added for cPanel
+[+] User signup added for Plesk and DirectAdmin
+[+] Emojis support added in Sieve filters
+[+] Default reminders for calendar events
+[+] Lifetime option added to public links in files storage
+[+] RocketChat 5.* full support (Aurora only)
+[+] Flexible RocketChat account name mapping
+[*] Tenant-level adminpanel interface rewritten
+[*] Fixed DAV compatibility issue with PHP 8.2
+[*] Fixed expanding attachments in messages opened in separate window/tab
+[*] Fixed issue with custom message sorting
+[*] Fixed issue with ReCAPTCHA missing on signup page
+[*] Fixed issue with DAV access in some configurations
+[*] Fixed issue with password encryption for RocketChat (Aurora only)
+[*] Debian packages configuration revised for compatibility
+[*] Fixed issues with DAV in Debian packages
+[*] IframeApp module refactored
+[*] Miscellaneous bugfixes
+
 [9.6.1]
 [+] Tenant adminpanel rewritten
 [+] EnableFailedLoginBlock setting now affects superadmin user as well
